@@ -18,6 +18,8 @@ let package = Package(
         .binaryTarget(
             name: "DeepdotsSDK",
             url: "https://github.com/MagicFeedback/DeepdotsSDK-SPM/releases/download/1.0.0/DeepdotsSDK-1.0.0.xcframework.zip",
+            // TODO: Replace with actual SHA256 checksum when the release is created
+            // You can calculate it with: swift package compute-checksum DeepdotsSDK-1.0.0.xcframework.zip
             checksum: "0000000000000000000000000000000000000000000000000000000000000000"
         )
     ]
