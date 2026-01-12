@@ -7,15 +7,14 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-        // Expone el módulo que importará la app iOS
-        .library(name: "ComposeApp", targets: ["ComposeApp"])
+        .library(name: "ComposeApp", targets: ["ComposeApp"]) // módulo consumido desde Swift
     ],
     targets: [
-        // Binario SPM que apunta al XCFramework empaquetado
         .binaryTarget(
             name: "ComposeApp",
-            url: "https://github.com/MagicFeedback/DeepdotsSDK-SPM/releases/download/0.1.2/DeepdotsSDK-0.1.2.xcframework.zip",      // ej: https://github.com/MagicFeedback/DeepdotsSDK-SPM/releases/download/0.1.2/DeepdotsSDK-0.1.2.xcframework.zip
-            checksum: "CHECKSUM"      // ej: salida de `swift package compute-checksum` sobre el zip
+            url: "https://github.com/MagicFeedback/DeepdotsSDK-SPM/releases/download/0.1.2/DeepdotsSDK-0.1.2.xcframework.zip",
+            checksum: "3e33ad58cc5486ca56be64050602cfb309332a440d44e9e0052cd17ce80d89b0"
         )
     ]
 )
+
