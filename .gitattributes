@@ -1,2 +1,2 @@
-*.xcframework filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
+# No LFS tracking. xcframework zips are published as GitHub Release assets and
+# downloaded by SPM via the .binaryTarget(url:) URL, not committed to the repo.
